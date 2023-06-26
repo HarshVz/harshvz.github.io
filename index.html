@@ -60,6 +60,40 @@ display: none !important;
 visibility: hidden;
 }
 
+html,body{
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+@media only screen and (max-width: 10000px) {
+  .custom-img_slider img{
+  width: 32vmin;
+  height: 18vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+}
+
+
+@media only screen and (max-width: 3840px) {
+  .custom-img_slider img{
+    width: 60vmin;
+  height: 35vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+}
+
+@media only screen and (max-width: 1920px) {
+  .custom-img_slider img{
+    width: 140vmin;
+  height: 76vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+}
 
 
 @media (max-width: 768px) {
@@ -95,6 +129,13 @@ display: block !important;
 
   .head{
     font-size: 40px !important;
+  }
+}
+
+
+@media (max-width: 328px) {
+  .head{
+    font-size: 20px !important;
   }
 }
 
@@ -315,7 +356,7 @@ He is Currently <b>Student</b> At R.C Technical Institute in Computer Engineerin
 <div class="row">
   <div class="col-md-6"><p></p></div>
   <div class="col-md-6 "><h6 style="text-align: right;">Works <br>Showcase!</h6>
- <a href="#"> <p style="text-align: right;">Checkout More Infromation &nbsp; <i class="fa-sharp fa-solid fa-arrow-down-right"></i></p></a>
+ <a href="showcase.html"> <p style="text-align: right;">Checkout More Works! &nbsp; <i class="fa-sharp fa-solid fa-arrow-down-right"></i></p></a>
   </div>
 </div>
   <div class="custom-img_slider" id="customslider"  data-mouse-down-at="0" data-prev-percentage="0">
@@ -406,8 +447,8 @@ He is Currently <b>Student</b> At R.C Technical Institute in Computer Engineerin
 
   <div class="marquee mt-4 mb-1" >
       <div>
-        <span>FROM DESIGNING DREAMS TO DIGITAL DOMINATION: HARSH'S INSPIRING JOURNEY OF CREATIVE EXPLORATION AND PROFESSIONAL GROWTH! </span>
-        <span style="color: var(--primary-color) !important;">FROM DESIGNING DREAMS TO DIGITAL DOMINATION: HARSH'S INSPIRING JOURNEY OF CREATIVE EXPLORATION AND PROFESSIONAL GROWTH ! </span>
+        <span  style="color: var(--primary-color) !important;">FROM DESIGNING DREAMS TO DIGITAL DOMINATION: HARSH'S INSPIRING JOURNEY OF CREATIVE EXPLORATION AND PROFESSIONAL GROWTH! </span>
+        <span>FROM DESIGNING DREAMS TO DIGITAL DOMINATION: HARSH'S INSPIRING JOURNEY OF CREATIVE EXPLORATION AND PROFESSIONAL GROWTH ! </span>
   </div>
     </div>
 </div>
@@ -505,13 +546,6 @@ const cursorDot = document.querySelector("[data-cursor-dot]");
     h3.addEventListener("mouseenter", toggleCursorSize);
     h3.addEventListener("mouseleave", toggleCursorSize);
   });
-/*
-  aElements.forEach((a) => {
-    a.addEventListener("mouseenter", toggleCursorSize);
-    a.addEventListener("mouseleave", toggleCursorSize);
-  });
-
-  */
 
   window.addEventListener("mousemove", function (e) {
     const posX = e.clientX;
